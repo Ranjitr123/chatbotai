@@ -106,7 +106,7 @@
       chatBox.scrollTop = chatBox.scrollHeight;
 
       try {
-        const res = await fetch("http://localhost:5001/generate", {
+        const res = await fetch("https://chatbotai-qtyj.onrender.com/generate", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ prompt: message }),
